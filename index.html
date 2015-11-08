@@ -1,113 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="scotchApp">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>Leandro Pereira</title>
-	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-	<link rel="stylesheet" href="/free_bt_theme/css/bootstrap.min.css"/>	<!-- Custom CSS -->
-	<link rel="stylesheet" href="/free_bt_theme/css/freelancer.css"/>	<!-- Custom Fonts -->
-	<link rel="stylesheet" href="/free_bt_theme/css/fontawesome/css/font-awesome.min.css"/>	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Leandro Pereira</title>
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="free_bt_theme/css/bootstrap.min.css"/>	<!-- Custom CSS -->
+    <link rel="stylesheet" href="free_bt_theme/css/freelancer.css"/>	<!-- Custom Fonts -->
+    <link rel="stylesheet" href="free_bt_theme/css/fontawesome/css/font-awesome.min.css"/>	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- SPELLS -->
+    <!-- load angular and angular route via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script/script.js"></script>
 </head>
-<body id="page-top" class="index">
-	<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="http://leandrompereira.com.br/">Leandro Machado Pereira</a>
-			</div>
+<body id="main" class="index" ng-controller="mainController">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Leandro Machado Pereira</a>
+            </div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="hidden">
-						<a href="#page-top"></a>
-					</li>
-					<li class="page-scroll">
-						<a href="http://leandrompereira.com.br/portfolio">Portfolio</a>
-					</li>
-										<li class="page-scroll">
-						<a href="http://leandrompereira.com.br/contatos/enviar">Contato</a>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-	
-	<div class="container">
-		<div class="row">
-			<section>
-												<!-- Header -->
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<img src="/free_bt_theme/img/profile.png" alt="Leandro Machado Pereira" title="Leandro Machado Pereira" class="img-responsive"/>					<div class="intro-text">
-												<hr class="star-light">
-						<span class="skills">Web Developer - PHP - Jquery - CSS - Cake - Zend - Node - Amazon</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>			</section>
-		</div>
-	</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                                        <li class="page-scroll">
+                        <a href="#contatos">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-	<!-- Footer -->
-	<footer class="text-center">
-		<div class="footer-above">
-			<div class="container">
-				<div class="row">
-					<div class="footer-col col-md-12">
-						<h3>Em algum lugar na Web</h3>
-						<ul class="list-inline">
-							<li>
-								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-							</li>
-							<li>
-								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-below">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						Copyright &copy; LeandroMPereira.com.br 2015					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- jQuery Version 1.11.0 -->
-	<script src="/free_bt_theme/js/jquery-1.11.0.js"></script>	<!-- Bootstrap Core JavaScript -->
-	<script src="/free_bt_theme/js/bootstrap.min.js"></script></body>
+    <div class="container">
+        <div class="row">
+            <section>
+                <div ng-view> Message: {{ message}} </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-12">
+                        <h3>Em algum lugar na Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; LeandroMPereira.com.br 2015					</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="free_bt_theme/js/jquery-1.11.0.js"></script>	<!-- Bootstrap Core JavaScript -->
+    <script src="free_bt_theme/js/bootstrap.min.js"></script></body>
 </html>
