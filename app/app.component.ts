@@ -2,11 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `
-  <h1> {{title}} </h1>
-  <router-outlet>
-  `
+  templateUrl: '../views/layout.html'
 })
 export class AppComponent {
-  title:string = 'Star Wars Peoplez!';
+  title:string = 'Leandro Machado Pereira';
 }
